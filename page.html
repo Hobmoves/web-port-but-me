@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .game-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .game-item:hover {
+            transform: scale(1.05);
+        }
+        .game-item a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        .game-item a:hover {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unblocked Games Hub</h1>
+    <div class="game-list">
+        <div class="game-item"><a href="amanda-the-adventurer/index.html" target="_blank">Amanda the Adventurer</a></div>
+        <div class="game-item"><a href="andys-apple-farm/index.html" target="_blank">Andy's Apple Farm</a></div>
+        <div class="game-item"><a href="baldi-plus/index.html" target="_blank">Baldi's Basics Plus</a></div>
+        <div class="game-item"><a href="baldi-remaster/index.html" target="_blank">Baldi's Basics Remastered</a></div>
+        <div class="game-item"><a href="bendy/index.html" target="_blank">Bendy</a></div>
+        <div class="game-item"><a href="bergentruck/index.html" target="_blank">Bergentruck</a></div>
+        <div class="game-item"><a href="bloodmoney/index.html" target="_blank">Blood Money</a></div>
+        <div class="game-item"><a href="buckshot-roulette/index.html" target="_blank">Buckshot Roulette</a></div>
+        <div class="game-item"><a href="class-of-09/index.html" target="_blank">Class of '09</a></div>
+        <div class="game-item"><a href="cuphead/index.html" target="_blank">Cuphead</a></div>
+        <div class="game-item"><a href="dead-plate/index.html" target="_blank">Dead Plate</a></div>
+        <div class="game-item"><a href="deadseat/index.html" target="_blank">Deadseat</a></div>
+        <div class="game-item"><a href="donottakethiscathome/index.html" target="_blank">Don't Take This Cat Home</a></div>
+        <div class="game-item"><a href="fears-to-fathom/home-alone/index.html" target="_blank">Fears to Fathom: Home Alone</a></div>
+        <div class="game-item"><a href="happy-sheepies/index.html" target="_blank">Happy Sheepies</a></div>
+        <div class="game-item"><a href="hotline-miami/index.html" target="_blank">Hotline Miami</a></div>
+        <div class="game-item"><a href="human-expenditure-program/index.html" target="_blank">Human Expenditure Program</a></div>
+        <div class="game-item"><a href="jelly-drift/index.html" target="_blank">Jelly Drift</a></div>
+        <div class="game-item"><a href="karlson/index.html" target="_blank">Karlson</a></div>
+        <div class="game-item"><a href="kindergarten/index.html" target="_blank">Kindergarten</a></div>
+        <div class="game-item"><a href="lacysflashgames/index.html" target="_blank">Lacy's Flash Games</a></div>
+        <div class="game-item"><a href="milkman-karlson/index.html" target="_blank">Milkman Karlson</a></div>
+        <div class="game-item"><a href="omori-fixed/index.html" target="_blank">Omori</a></div>
+        <div class="game-item"><a href="people-playground/index.html" target="_blank">People Playground</a></div>
+        <div class="game-item"><a href="pizza-tower/index.html" target="_blank">Pizza Tower</a></div>
+        <div class="game-item"><a href="raft/index.html" target="_blank">Raft</a></div>
+        <div class="game-item"><a href="repo/index.html" target="_blank">Repo</a></div>
+        <div class="game-item"><a href="slender/index.html" target="_blank">Slender</a></div>
+        <div class="game-item"><a href="speed-stars/index.html" target="_blank">Speed Stars</a></div>
+        <div class="game-item"><a href="thats-not-my-neighbor/index.html" target="_blank">That's Not My Neighbor</a></div>
+        <div class="game-item"><a href="the-man-in-the-window/index.html" target="_blank">The Man in the Window</a></div>
+        <div class="game-item"><a href="ultrakill/index.html" target="_blank">Ultrakill</a></div>
+        <div class="game-item"><a href="undertale-yellow/index.html" target="_blank">Undertale Yellow</a></div>
+        <div class="game-item"><a href="web-fishing/index.html" target="_blank">Web Fishing</a></div>
+        <div class="game-item"><a href="yume-nikki/index.html" target="_blank">Yume Nikki</a></div>
+    </div>
+    <script>
+        // Optional: Add about:blank-like behavior for game links
+        document.querySelectorAll('.game-item a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const url = link.getAttribute('href');
+                const newWin = window.open('about:blank', '_blank');
+                if (newWin) {
+                    newWin.document.write(`
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <title>Classwork</title>
+                            <style>
+                                body { margin: 0; overflow: hidden; }
+                                iframe { width: 100vw; height: 100vh; border: none; }
+                            </style>
+                        </head>
+                        <body>
+                            <iframe src="${url}" frameborder="0"></iframe>
+                        </body>
+                        </html>
+                    `);
+                    newWin.document.close();
+                } else {
+                    // Fallback if pop-up is blocked
+                    window.open(url, '_blank');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
